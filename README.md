@@ -15,6 +15,8 @@ Başka bir kullanıcıya mesaj atma,
 Gönderi, kategori ve kullanıcı bazlı arama yapılabilme,
 Diğer kullanıcılardan bildirim alabilme gibi eylemlerle platformda aktif olarak dolaşarak bilgi sahibi olabilirler.
 
+Ayrıca şifremi unuttum,şifre güncelleme gibi işlemler de mevcuttur.
+
 #### Anasayfa:
 ![anasayfa](https://user-images.githubusercontent.com/50046719/175026458-524bcc4f-a1d3-40f5-a54c-9135823db487.PNG)
 
