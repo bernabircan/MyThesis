@@ -1,0 +1,23 @@
+@import "vendors/normalize";
+@import "base/fonts";
+@import "base/icons";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "components/button";
+@import "components/common";
+@import "components/input";
+
+@import "layout/header";
+@import "layout/lightbox";
+@import "layout/chat";
+
+@import "pages/landing";
+@import "pages/login";
+@import "pages/categoriesPage";
+@import "pages/profileCategoryPage";
+@import "pages/searchPage";
+@import "pages/postPage";
+
+@import "responsive/responsive";
+

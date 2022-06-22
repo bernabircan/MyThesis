@@ -1,0 +1,36 @@
+
+.lb-root {
+  background: rgba(0,0,0,.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  overflow: auto;
+
+  .lb-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lb-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+  }
+
+  .close-block {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .close-item {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+  }
+}

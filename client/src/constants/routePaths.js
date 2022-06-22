@@ -1,0 +1,12 @@
+export const LANDING_PAGE = "/";
+export const LOGIN_PAGE = "/"
+export const SEARCH_PAGE = "/arama"
+export const PROFILE_PAGE = "/kullanici/"
+export const CATEGORIES_PAGE = "/kategoriler"
+export const CATEGORY_PAGE = "/kategori/"
+export const POST_PAGE = "/gonderi/"
+export const RESET_PASSWORD_PAGE = "/sifremi-unuttum/"
+export const REGISTER_CONFIRM_PAGE = "/uyelik-onayi/"
+export const ABOUT_US_PAGE = "/hakkimizda"
+export const CONTACT_US_PAGE = "/bize-ulasin"
+export const URL = "http://localhost:3000"

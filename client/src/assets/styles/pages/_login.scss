@@ -1,0 +1,142 @@
+
+.login-root {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  .login-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 24px;
+  }
+
+  .login-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 18px 12px;
+    margin: 0;
+  }
+
+  .logo-item {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 50%;
+    }
+  }
+
+  .text-item {
+    padding: 12px 0 18px;
+    text-align: center;
+  }
+
+  .login-block {
+
+  }
+
+  .btn-block {
+    display: flex;
+    justify-content: space-between;
+
+    .btn-item {
+      width: 45%;
+    }
+  }
+
+  .link-block {
+    padding: 16px 0 0;
+    display: flex;
+
+    .link-item {
+      color: #0028b2;
+      cursor: pointer;
+    }
+  }
+
+  .error-text {
+    padding: 18px 0 0;
+    p {
+      color: #9c0808;
+    }
+    &.password {
+      padding: 0 0 8px;
+    }
+  }
+
+  .register-container {
+
+    .title-block {
+      padding: 4px 0;
+      margin: 0 0 24px;
+      border-bottom: 1px solid #CBCBCB;;
+
+      p {
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.5;
+      }
+
+      span {
+        font-size: 16px;
+        @include font-bold;
+      }
+
+      &.border-none {
+        border: none;
+        padding: 0;
+        margin: 18px 0 12px;
+      }
+
+      &.last-step {
+        padding: 0;
+
+        p {
+          font-size: 16px;
+          margin: 0 0 4px;
+        }
+
+        span {
+          font-size: 18px;
+        }
+      }
+
+      &.with-btn {
+        border: none;
+        padding: 0;
+      }
+    }
+
+    .login-input-item {
+      &.row-reverse {
+        flex-direction: row-reverse;
+        align-items: center;
+
+        label {
+          margin: 0 0 0 12px;
+        }
+      }
+    }
+
+    .btn-block {
+      justify-content: center;
+    }
+
+  }
+
+  .outlook-link-item {
+    margin: 8px 0 0;
+    font-size: 14px!important;
+
+    a {
+      color: #5100ba;
+    }
+  }
+}

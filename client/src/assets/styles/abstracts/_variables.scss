@@ -1,0 +1,30 @@
+
+$white: #ffffff;
+$black: #000000;
+
+$bc: #DAE0E6;
+$btnBlue: #0093E9;
+$btnBlueHover: #00a1ff;
+$categoryItem: #1A1A1B;
+$categoryItemBorder: #EDEFF1;
+$content-border: #CCCCCC;
+$inputBc: #F7F7F7;
+$inputBorderColor: #E8E8E8;
+
+$grey1: #777777;
+$grey2: #8D8D8D;
+$grey3: #DFDFDF;
+
+html {
+    background-color: $bc;
+}
+
+body {
+    @include font-semiBold;
+    font-size: 12px;
+}
+
+.safe-area {
+    max-width: 991px;
+    margin: 0 auto;
+}

@@ -1,0 +1,44 @@
+
+.categories-page-root {
+  width: 100%;
+  margin: 0 auto 36px;
+  max-width: 600px;
+
+  .categories-page-wrapper {
+    background-color: $white;
+    border-radius: 4px;
+  }
+
+  .head-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 8px 8px 20px;
+  }
+
+  h1 {
+    @include font-bold;
+    font-size: 32px;
+  }
+
+  .category-item {
+    height: 60px;
+
+    &:hover {
+      .hover-lb {
+        left: 110px;
+        top: 50px;
+      }
+    }
+
+    .category-name {
+      @include font-semiBold;
+      font-size: 16px;
+    }
+
+    .btn-item {
+      height: 32px;
+    }
+
+  }
+}

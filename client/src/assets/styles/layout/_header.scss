@@ -1,0 +1,220 @@
+
+.header-root {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+
+  .header-wrapper {
+    height: 52px;
+    background-color: $white;
+    padding: 0 32px;
+  }
+
+  .header-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-item {
+    height: 90%;
+
+    .logo {
+      height: 100%;
+    }
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .search-block {
+    .btn-item {
+      margin: 0 0 0 8px;
+    }
+  }
+
+  .user-action-block {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    .user-action-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      position: relative;
+      margin: 0 0 0 24px;
+
+      span {
+        color: $black;
+        font-size: 14px;
+        margin: 0 0 0 4px;
+      }
+
+      .icon-item {
+        display: flex;
+        align-items: center;
+      }
+
+      .open-user-action-root {
+        display: none;
+      }
+
+      &.opened {
+        position: relative;
+
+        .open-user-action-root {
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 60px;
+          width: 120px;
+          border: 1px solid #CCCCCC;
+          border-radius: 8px;
+          z-index: 1;
+          overflow: hidden;
+
+          .open-user-action-block {
+            display: flex;
+            flex-direction: column;
+
+            .open-user-action-item {
+              color: $black;
+              font-size: 16px;
+              border-top: 2px solid #EDEFF1;
+              padding: 12px 12px 12px 12px;
+              margin: 0;
+
+              &:first-child {
+                border: none;
+              }
+
+              &:hover {
+                background-color: #F7F7F7;
+              }
+            }
+          }
+        }
+      }
+
+      &.profile {
+        height: 100%;
+        align-items: center;
+
+        .img-item {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        i {
+          margin: 3px 0 0 4px;
+        }
+
+        &:hover {
+
+          span {
+            color: #474747;
+          }
+        }
+      }
+
+      &.notify, &.chat {
+        padding: 8px 16px;
+        margin: 0;
+        border-radius: 8px;
+
+        &:hover {
+          background-color: #f4f4f4;
+        }
+
+        &.new::after {
+          position: absolute;
+          right: 16px;
+          bottom: 6px;
+          content: "";
+          display: block;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: #0093E9;
+          margin: 1px 0 0 4px;
+        }
+      }
+
+      &.notify {
+        .open-user-action-root {
+          width: auto;
+        }
+
+        .open-user-action-block {
+          max-height: 240px;
+          overflow: auto;
+
+          &::-webkit-scrollbar {
+            width: 4px;
+            border-radius: 8px;
+            background-color: #dddddd;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background-color: #bfbfbf;
+            width: 4px;
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+  }
+
+  .notify-item {
+    background-color: white;
+    padding: 12px 24px 12px 12px;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    min-height: 60px;
+    position: relative;
+    border-top: 1px solid #EDEFF1;
+
+    &:first-child {
+      border: none;
+    }
+
+    .notification {
+      display: flex;
+      align-items: center;
+    }
+
+    &:hover {
+      background-color: #f8f8f8;
+    }
+
+    &.new:after {
+      content: "";
+      position: absolute;
+      @include centre("y");
+      right: 8px;
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #0093E9;
+  }
+}
+
+}
+

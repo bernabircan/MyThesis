@@ -1,0 +1,62 @@
+
+.search-page-root {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 600px;
+
+  .search-page-wrapper {
+
+  }
+
+  .head-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 8px 8px 20px;
+  }
+
+  h1 {
+    @include font-bold;
+    font-size: 32px;
+  }
+
+  .title-item {
+    padding: 8px 8px 8px 20px;
+
+    h2 {
+      font-size: 24px;
+    }
+  }
+
+  .search-container {
+
+    &.users{
+
+    }
+
+    &.categories {
+
+    }
+
+    &.posts {
+
+    }
+  }
+
+  .categories-block {
+    overflow: auto;
+    max-height: 220px;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+      border-radius: 8px;
+      background-color: #dddddd;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #bfbfbf;
+      width: 4px;
+      border-radius: 8px;
+    }
+  }
+}

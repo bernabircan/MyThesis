@@ -1,0 +1,33 @@
+@mixin font-face($style-name, $family, $category: "") {
+    $filepath: "../fonts/" + $family;
+    @font-face {
+        font-family: "#{$style-name}";
+        src: url($filepath + ".eot");
+        src: url($filepath + ".eot?#iefix") format("embedded-opentype"), url($filepath + ".woff") format("woff"),
+            // url($filepath + ".ttf")  format('truetype'),
+        url($filepath + ".svg#" + $style-name + "") format("svg");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+}
+
+
+@include font-face('SourceSansPro-Regular', 'SourceSansPro-Regular', 'serif');
+@include font-face('SourceSansPro-SemiBold', 'SourceSansPro-SemiBold', 'serif');
+@include font-face('SourceSansPro-Bold', 'SourceSansPro-Bold', 'serif');
+
+@mixin font-regular {
+    font-family: "SourceSansPro-Regular", arial, helvetica, sans-serif;
+    font-weight: normal;
+}
+
+@mixin font-semiBold {
+    font-family: "SourceSansPro-SemiBold", arial, helvetica, sans-serif;
+    font-weight: normal;
+}
+
+@mixin font-bold {
+    font-family: "SourceSansPro-Bold", arial, helvetica, sans-serif;
+    font-weight: normal;
+}
